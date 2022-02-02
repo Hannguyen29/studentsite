@@ -1,0 +1,34 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: rgb(155, 217, 253);
+    margin: 0;
+    text-align: center;
+    display: grid;
+   align-items: center;
+   min-height: 100vh;
+
+}
+
+h1 {
+    font-size: 48xp;
+    text-transform: uppercase;
+    text-align: center;
+    background: pink;
+}
+
+h2 {
+    text-align: center;
+}
+p {
+    color: rgb(141, 94, 49);
+    max-width: 30em;
+    margin: 0 auto;
+}
+ul {
+    text-align: left;
+    margin: 0 auto;
+}
+
+a {
+    color: rgb(141, 94, 49);
+}
