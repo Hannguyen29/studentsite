@@ -1,34 +1,123 @@
+/* GLOBAL RESET */
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+/* GLOBAL COLOR */
+body { color: black}
+a { color: rgb(8, 94, 41)}
+a:hover { color: rgb(90, 211, 126)}
+
+/* GLOBAL TYPOGRAPHY */
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background: rgb(155, 217, 253);
-    margin: 0;
-    text-align: center;
+    font-size: 88.75%; /* 14px */
+    line-height: 1.4;
+}
+
+/* HEADER */
+
+header {
+    background-color: rgb(26, 77, 33);
+    color: rgba(255,255,255, .8);
+    padding: 1em;
     display: grid;
-   align-items: center;
-   min-height: 100vh;
-
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
-h1 {
-    font-size: 48xp;
+header a {
+    color: rgba(255,255,255, .8);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: rgba(255,255,255, .1);
+}
+
+/* SITE ID */
+.site-id h1 {
+    margin: 0;
+}
+
+/* SITE NAV */
+.site-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav a {
+    display: block;
+    padding: 1em;
+}
+
+/* MAIN */
+main {
+    background: rgba(0,0,0,.05);
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px solid rgba(0,0,0,.05);
+    padding: 1em;
+}
+
+/* SOCIAL NAV */
+.social-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-nav  a {
+    display: block;
+    padding: 1em;
+}
+
+/* HERO SECTION */
+.hero {
+    background-color: rgb(26, 77, 33);
+    color: rgba(255,255,255, .8);
+    text-align: center;
+    padding: 6em 1em;
+}
+
+.hero h2 {
+    font-size: 6em;
+    line-height: 1;
     text-transform: uppercase;
-    text-align: center;
-    background: pink;
+    margin: 0 auto;
 }
 
-h2 {
-    text-align: center;
-}
-p {
-    color: rgb(141, 94, 49);
+.hero p {
     max-width: 30em;
-    margin: 0 auto;
-}
-ul {
-    text-align: left;
-    margin: 0 auto;
+    margin: 1em auto;
 }
 
-a {
-    color: rgb(141, 94, 49);
+/* COURSES SECTION */
+.courses {
+    padding: 6em 1em;
+    display: grid;
+    justify-content: center;
 }
+
+.courses ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.courses h3 {
+    text-align: center;
+}
+
+/* FOR WEB DEV PURPOSES ONLY */
+/* body, * {
+    background-color: rgba(0,0,0,.05);
+    border: 1px solid rgba(0,0,0,.1);
+    color: rgba(0,0,0,.5);
+} */ 
