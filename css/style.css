@@ -58,6 +58,10 @@ main {
     background: rgba(0,0,0,.05);
 }
 
+section {
+    padding: 3em 1em;
+}
+
 /* FOOTER */
 footer {
     border-top: 1px solid rgba(0,0,0,.05);
@@ -66,29 +70,28 @@ footer {
 
 /* LAYOUT */
 .container {
-    border: 1px solid red;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-    .two.col.sidebar {
+    .two-col-sidebar {
         display: grid;
         grid-template-columns: 25% 75%;
     }
 
     .two-col-sidebar aside {
-        border-right: 10px solid palevioletred;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
     }
 }
 
 
 aside {
-    border: 1px solid rgb(207, 125, 49);
+    padding: 0em 1em;
 }
 
 .primary {
-    border: 1px solid rgb(198, 209, 46);
+    padding: 0 1em;
 }
 
 /* SOCIAL NAV */
@@ -158,6 +161,34 @@ aside {
 
 .projects {
     margin: 2em;
+}
+
+/* CODE BLOCKS */
+pre code {
+    width: 100%;
+    display: block;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 1em 3em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+  }
+
+.markup-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 1em 3em;
+    margin-bottom: 1em;
+}
+
+/* DEFINITION LISTS */
+dt {
+    font-weight: bold;
+    margin-top: 1em;
+}
+dd {
+    margin: 0;
 }
 
 /* FOR WEB DEV PURPOSES ONLY */
