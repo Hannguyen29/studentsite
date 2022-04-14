@@ -119,7 +119,7 @@
          font-size: inherit;
          line-height: 1;
         background-color: rgba(0,0,255,1);
-        border: 1px solid rgba(0,0,255,1);
+        border: 1px solid rgba(0,0,255,.1);
         color: rgba(255,255,255,1);
         padding: 1em;
         display: inline-block;
@@ -144,4 +144,128 @@
     .button.alt:hover {
         border-color: rgba(0,0,153,1);
         color: rgba(255,255,255,1);
+    }
+
+    /* LAYOUT */
+
+    /*SIMPLE RESET */
+    * { box-sizing: border-box; }
+    body {margin: 0;}
+
+    /* CONTAINER */
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 4%;
+
+    }
+
+    /* MEDIA QUERIES */
+
+    @media (min-width: 768px) {
+        /* TABLET SIZED STYLING GOES HERE */
+    }
+
+    @media (min-width: 1050px) {
+        body {
+            font-size: 100% /* 16px */;
+        }
+    }
+
+    @media (min-width: 1250px) {
+        body {
+            font-size: 112.5% /* 18px */;
+        }
+        .container {
+            max-width: 1200px;
+        }
+
+    }
+
+    /* FOR DEMO PURPOSES ONly */
+    body.demo {
+        padding: 2em;
+    }
+    body.demo::before {
+        content: "Small (Mobile) Less Than 768px";
+        background-color: #933;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        text-align: center;
+        color: white;
+        padding: .5em;
+    }
+
+    @media (min-width: 768px) {
+        body.demo::before {
+            background-color: #bcb83d;
+            content: "Midsize (Tablet) Screen 768px - 1050px";
+        }
+    }
+
+    @media (min-width: 1050px) {
+        body.demo::before {
+            background-color: #693;
+            content: "Large (Notebook) Screen 1050px - 1250px";
+        }
+    }
+
+    @media (min-width: 1250px) {
+        body.demo::before {
+            background-color: #09c;
+            content: "Extra Large (Desktop) Screen 1250px +";
+        }
+    }
+
+    /* SEMANTIC GRID SYSTEM */
+
+    .row > .colum {
+        margin-bottom: 8%;
+    }
+
+    @media (min-width: 768px) {
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-left: -2%;
+            margin-right: -2%;
+        }
+
+        .row > .colum {
+            flex-grow: 1;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
+        .row > .colum.one-half {
+            max-width: 46%;
+        }
+
+        .row > .colum.one-thirds {
+            max-width: 29.3333%;
+        }
+
+        .row > .colum.two-thirds {
+            max-width: 62.6666%;
+        }
+
+        .row > .colum.one-fourd {
+            max-width: 21%;
+        }
+
+        .row > .colum.centered {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+
+
+    /* FOR DEMO PURPOSES ONLY */
+    .demo .colum {
+        background: rgba(0,0,0,.2);
+        padding: .1em;
+        text-align: center;
     }
