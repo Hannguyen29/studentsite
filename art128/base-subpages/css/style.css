@@ -6,17 +6,18 @@
             #HEADINGS
             #PARAGRAPHS
             #LINKS
+            #ARTICLE
             #HELPERS
         #MEDIA
             #IMAGES
         #COMPONENTS
             #BUTTONS
     #BASE LAYOUT
-        #SIMPLE RESET
+        #SIMPLE RESET 
         #MEDIAQUERIES
         #CONTAINER
         #GRID SYSTEM
-            #CLEARFIX
+            #CLEARFIX 
     #BASE SITE
         #SITE STRUCTURE
             #HEADER
@@ -106,6 +107,43 @@
         margin-left: auto;
         margin-right: auto;
     }
+   
+    .hidden {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    @media (min-width: 768px) {
+        .hidden-desktop {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+    }
+
+    @media (min-width: 767px) {
+        .hidden-mobile {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+    }
+  
+    .subheader {
+        color: #999;
+        margin-top: 1em;
+        font-style: normal;
+        font-weight: normal;
+        clear: both;
+    }
+  
+  /* HORIZONTAL RULES */
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 2em 0;
+  }
 
     /* IMAGES */
     img {
@@ -345,6 +383,11 @@
         margin-right: auto;
     }
 
+    .hero.full-width {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     /* TOGGLE NAV */
     @media (max-width: 767px) {
         .toggle-nav .site-id {
@@ -400,4 +443,59 @@
             content: "\2715";
         }
 
+    }
+
+    /* SUB PAGES */
+
+    article {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    article h1,
+    article h1 + .subhead,
+    article .date {
+        text-align: center;
+    }
+
+    article h2.subhead {
+        font-size: 1.5em;
+        line-height: 1.2;
+    }
+
+    article .subhead {
+        font-weight: normal;
+        opacity: .7;
+    }
+
+    article .date {
+        font-size: .75em;
+        opacity: .5;
+        margin-bottom: 3em;
+    }
+
+    article p + h1,
+    article p + h2,
+    article p + h3,
+    article p + h4,
+    article p + h5,
+    article p + h6 {
+        margin-top: 1.5em;
+    }
+
+     /*
+     article p:first-of-type {
+        font-size: 1.4em;
+        line-height: 1.3;
+    } */
+
+    article p:first-of-type::first-letter {
+        font-size: 3em;
+        line-height: 1em;
+        background: #000;
+        color: #fff;
+        padding: .2em .4em;
+        margin-right: .3em;
+        float: left;
     }
