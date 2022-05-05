@@ -203,6 +203,12 @@ img {
   height: auto;
 }
 
+img {
+  max-width: 50%;
+  height: auto;
+}
+
+
 /* Image Floats */
 img.float-left {
   float: left;
@@ -466,43 +472,16 @@ section {
 }
 
 /* Hero Sections */
-/*.container .hero {
-  position: relative;
-  top: 2em;
-  margin-bottom: 3em;
-}
 
-.hero {
-  padding: 15em;
-  background: #ddd;
-  background-image: url(../img/tea.jpg);
-  border-top: none;
-  background-size: cover;
-  background-position: center 50%;
+.container-hero {
+  max-width: 900px;
+  margin: 0 auto;
+  background-image: url(../img/tea.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 1000px;
 }
-.hero h1,
-.hero h2 {
-  font-size: 3em;
-  line-height: 1.1em;
-  max-width: 10em;
-}
-.hero p {
-  max-width: 22em;
-}
-.hero.text-centered h1,
-.hero.text-centered h2,
-.hero.text-centered h3,
-.hero.text-centered h4,
-.hero.text-centered h5,
-.hero.text-centered h6,
-.hero.text-centered p {
-  margin-left: auto;
-  margin-right: auto;
-}
-.hero.full-width {
-  margin-top: 0;
-  margin-bottom: 0;
-} */
 
 /* STICKY header - works with a class="sticky" on .site-header */
 .site-header.sticky {
@@ -837,50 +816,6 @@ form input[type=reset]:hover {
   border-color: #003;
 }
 
-/* make keyframes that tell the start state and the end state of our object */
-@-webkit-keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-main {
-  /* call our keyframe named fade-in, use animattion ease-in and repeat it only 1 time */
-  -webkit-animation: fade-in ease-in 1;
-  -moz-animation: fade-in ease-in 1;
-  animation: fade-in ease-in 1;
-  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-}
-
-img {
-  max-width: 60%;
-  height: auto;
-  
-}
 
 /* CUSTOM SITE CSS */
 .section-title {
