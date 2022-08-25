@@ -471,17 +471,6 @@ section {
   padding: 1.5em 0;
 }
 
-/* Hero Sections */
-
-.container-hero {
-  max-width: 900px;
-  margin: 0 auto;
-  background-image: url(../img/tea.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  min-height: 1000px;
-}
 
 /* STICKY header - works with a class="sticky" on .site-header */
 .site-header.sticky {

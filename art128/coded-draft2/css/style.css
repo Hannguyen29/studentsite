@@ -53,6 +53,19 @@ body {
   /* 14px x 1.5em = 21px */
 }
 
+.hero {
+  background-image: url(../img/tps.png);
+  background-position: center;
+  background-color: rgba(0, 0, 0, .1);
+  background-size: cover;
+  text-align: center;
+  min-height: 100vh;
+  padding: 1em;
+  display: grid;
+  place-items: center;
+}
+
+
 /* #HEADINGS
     Based on a Traditional Typographic Scale
     48, 36, 24, 21, 18, 16
@@ -68,9 +81,13 @@ h6 {
 }
 
 h1 {
-  font-size: 2em;
-  /* 48px / 16px = 3em */
-  line-height: 1;
+  color: rgb(73, 73, 73);
+  font-family: didot, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3em;
+  line-height: 1.5;
+  text-align: center;
 }
 
 h2 {
@@ -83,6 +100,7 @@ h3 {
   font-size: 1.3125em;
   line-height: 1.3;
 }
+
 
 /* #PARAGRAPHS */
 p {
@@ -198,10 +216,17 @@ code {
 
 /* #MEDIA  */
 /* #IMAGES */
-img {
-  max-width: 100%;
+.site-logo img {
+  max-width: 40%;
   height: auto;
 }
+#gallery .row .one-third.column img {
+  max-width: 120%;
+  height: auto;
+  display: inline;
+  padding: 4em;
+}
+
 
 /* Image Floats */
 img.float-left {
@@ -876,11 +901,6 @@ main {
   animation-duration: 0.5s;
 }
 
-img {
-  max-width: 60%;
-  height: auto;
-  
-}
 
 /* CUSTOM SITE CSS */
 .section-title {
